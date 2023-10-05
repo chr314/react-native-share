@@ -8,8 +8,6 @@ import checkPermissions from './helpers/checkPermissions';
 import {
   Social,
   IsPackageInstalledResult,
-  ActivityType,
-  ShareAsset,
   ShareOpenResult,
   ShareOptions,
   ShareSingleOptions,
@@ -102,10 +100,4 @@ const RNShare = {
   },
 } as const;
 
-export { Overlay, Sheet, Button, ShareSheet, ShareAsset, Social };
-export type { ShareSingleOptions, ShareOptions, ActivityType, IsPackageInstalledResult };
-export type { OverlayProps } from './components/Overlay';
-export type { SheetProps } from './components/Sheet';
-export type { ButtonProps } from './components/Button';
-export type { ShareSheetProps } from './components/ShareSheet';
 export default RNShare;

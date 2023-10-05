@@ -8,6 +8,10 @@ export function isAndroid() {
   return 'android' === Platform.OS;
 }
 
+export function isWeb() {
+  return 'web' === Platform.OS;
+}
+
 export function getAndroidVersion() {
   const version = Platform.Version;
   return typeof version === 'string' ? parseInt(version, 10) : version;
