@@ -26,10 +26,6 @@ const RNShare = {
 
     options = normalizeShareOpenOptions(options);
 
-    if (window.navigator.share === undefined) {
-      throw new Error('Share is not supported in this browser');
-    }
-
     return window.navigator
       .share({
         title: options.title,
